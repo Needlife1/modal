@@ -6,45 +6,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./stayle.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
 
-    <ul>
-        <li>Cat</li>
-        <li>Hamster</li>
-        <li>Horse</li>
-        <li>Parrot</li>
-    </ul>
-    </li>
-    <li class="item">
-        <h2>Products</h2>
-
-        <ul>
-            <li>Bread</li>
-            <li>Prasley</li>
-            <li>Cheese</li>
-        </ul>
-    </li>
-    <li class="item">
-        <h2>Technologies</h2>
-
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Node.js</li>
-        </ul>
-    </li>
-    </ul>
-
-    <script src="js/task-01.js" type="module"></script>
-    <script src="./Lessons7_8.js"></script>
-    <script src="./Lessons9_10.js"></script>
-    <script src="./Lessons11_12.js"></script>
-    <script src="./test.js"></script>
-
 </body>
+<button class="open-modal">open</button>
+<div class="backdrop">
+    <div class="modal">
+        <button class="modal-exit-btn">Exit</button>
+        <h1 class="modal-title">Registration window</h1>
+        <form>
+
+            <div class="label">
+                <label for="label">Name</label>
+                <input id="label" class="modal-input" name="neme" placeholder="Max" type="text" required>
+
+            </div>
+            <div class="label">
+                <label for="label1">Email</label>
+                <input id="label1" class="modal-input" name="email" placeholder="Max@gmail.com" type="email" required>
+
+            </div>
+            <div class="label">
+                <label for="label3">Tel</label>
+                <input id="label3" class="modal-input" name="tel" placeholder="+380" type="tel" required>
+
+            </div>
+
+            <div class="label">
+                <label for="textarea">Message</label>
+                <textarea name="" id="textarea" class="modal-textarea"></textarea>
+
+            </div>
+
+            <div class="label">
+                <label for="label4">Receive newsletter</label>
+                <input id="label4" value="agree" name="receive" type="checkbox">
+
+            </div>
+            <button type="submit">Ok</button>
+        </form>
+    </div>
+</div>
 
 </html>
